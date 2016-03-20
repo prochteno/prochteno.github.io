@@ -3,7 +3,5 @@ title: прочтено
 description: восторг, уныние, би
 url: "http://prochteno.github.io"
 
-font-awesome-include: false
-
 markdown: kramdown
 exclude: ["README.md", "LICENSE"]
