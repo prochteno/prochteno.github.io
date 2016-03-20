@@ -1,12 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italc,400,400italic,500,700);
+@font-face {
+  font-family: 'Gregor';
+  src: url('Gregor_reg_v20-06-2013.otf');
+}
 
 html {
-  font: 18px/1.6 'Open Sans', sans-serif;
+  font: 22px/1.6 'Gregor', Georgia;
 }
 
 
 @media (max-width: 325px) {
-  html { font: 17px/1.6 'Open Sans', sans-serif; }
+  html { font: 17px/1.6 'Gregor', Georgia; }
 }
 
 body {
@@ -33,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0.5rem -0.1rem /* align left edge */;
   color: #111;
   text-rendering: optimizeLegibility;
-  font-family: 'Open Sans', serif;
+  font-family: 'Gregor', Georgia;
   line-height: 1.2
 }
 
@@ -174,22 +177,12 @@ td, th {
   border: 1px solid #ccc;
 }
 
-pre, code {
-  font-family: monospace;
-  background-color: #eee;
-}
-
 pre {
-  padding: .5rem 1rem;
-  font-size: 0.8rem;
+  font-family: 'Gregor', Georgia;
 }
 
 code {
   padding: .1rem .25rem;
-}
-
-pre > code {
-  padding: 0;
 }
 
 .container {
@@ -198,72 +191,11 @@ pre > code {
   padding: 0 0.75rem;
 }
 
-.sharing {
-  text-align: center;
-}
-
 .date {
   text-align: right;
   font-size: 75%;
   font-style: italic;
 }
 
-@media (max-width: 635px) {
-.sharing {
- font-size: 85%;
- }
-}
-
-/* This gets Google to fall into place */
-.social {
- text-align: right;
-}
-
-.topsocial {
-	margin-bottom: 5em;
-}
-
-/* This gets Facebook to fall into place */
-.social iframe {
-	vertical-align: middle;
-}
-
-/* Set an optional width for your button wrappers */
-.social span {
-	display: inline-block;
-	width: 110px;
-}
-
-/* Adjust the widths individually if you like */
-.social .google {
-	width: 75px;
-}
-
-.button {
-  margin-top: 2em;
-  margin-left: 1em;
-  display: inline-block;
-  border: 2px solid #111;
-  border-radius: 0.4em;
-  padding: 0.1em 0.75em;
-  font-size: 17px;
-  color: #111;
-  text-align: center;
-}
-
-.button:hover {
-	color: white;
-	background-color: #111;
-	cursor: pointer;
-	text-decoration: none;
-	transition: 0.5s;
-}
-
-.Facebook {
-	transform: scale(1.25);
-}
-
-.sharing-buttons {
-	width: 100%;
-}
-}
+small { color: #555; }
+.right { text-align: right; }
